@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiling Water on a Stove: Thermal Concepts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .story-section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .story-section:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .description {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .description p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boiling Water on a Stove: Thermal Concepts</h1>
+
+    <div class="story-section" onclick="toggleDescription('hot')">
+        <h2>Hot</h2>
+        <div id="hot" class="description">
+            <p>When you touch the pot on the stove, you feel that it is <strong>hot</strong>. This is a qualitative perception based on your sensory experience. The pot feels hot because its temperature is much higher than your hand.</p>
+        </div>
+    </div>
+
+    <div class="story-section" onclick="toggleDescription('heat')">
+        <h2>Heat</h2>
+        <div id="heat" class="description">
+            <p>The <strong>heat</strong> is the energy being transferred from the stove to the pot. This energy transfer occurs because the stove is at a higher temperature than the pot, causing energy to flow into the pot and increase its thermal energy. In scientific terms, heat is the transfer of thermal energy due to a temperature difference.</p>
+            <p><em>Example in context</em>: "Heat is transferred from the stove burner to the pot."</p>
+        </div>
+    </div>
+
+    <div class="story-section" onclick="toggleDescription('thermal-energy')">
+        <h2>Thermal Energy</h2>
+        <div id="thermal-energy" class="description">
+            <p>The <strong>thermal energy</strong> of the water in the pot refers to the total kinetic energy of all the water molecules. As the stove heats the pot, the thermal energy of the water increases because the water molecules move more rapidly.</p>
+            <p><em>Example in context</em>: "As the water heats up, its thermal energy increases."</p>
+        </div>
+    </div>
+
+    <div class="story-section" onclick="toggleDescription('temperature')">
+        <h2>Temperature</h2>
+        <div id="temperature" class="description">
+            <p>The <strong>temperature</strong> of the water measures the average kinetic energy of the water molecules. When we say the water boils at 100°C, this temperature indicates the point at which the water's thermal energy is high enough for it to change state from liquid to gas.</p>
+            <p><em>Example in context</em>: "The temperature of the boiling water is 100°C."</p>
+        </div>
+    </div>
+
+    <div class="story-section" onclick="toggleDescription('thermal-conductivity')">
+        <h2>Thermal Conductivity</h2>
+        <div id="thermal-conductivity" class="description">
+            <p>The <strong>thermal conductivity</strong> of the pot material (e.g., metal) describes how efficiently it transfers heat from the stove to the water. Metals typically have high thermal conductivity, allowing them to quickly transfer heat.</p>
+            <p><em>Example in context</em>: "The pot's high thermal conductivity ensures that heat from the stove is efficiently transferred to the water."</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
